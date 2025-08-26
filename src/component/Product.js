@@ -1,13 +1,12 @@
 import React from 'react'
 
 function Product({productTitle, productPrice, feature}) {
-    const options = feature.map((feature) => <li>{feature}</li>);
     return ( 
         <>
         <h1>{productTitle}</h1>
         <h5>Price : {productPrice}</h5>
-        <p>Features</p>
-        <p>{options}</p>
+        {productPrice > 15000 ? <p>Discount of 10%</p> : null}
+        {productPrice > 35000 && <p>Discount of 15%</p>}
         </>
      );
 }
