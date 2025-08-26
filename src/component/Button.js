@@ -16,7 +16,7 @@ function Button() {
   return (
     <>
       <button onClick={handleConsole}>Click me!</button>
-      <p onMouseOverCapture={handlePrint}>This is my mouse over paragraph.</p>
+      <p onMouseOver={handlePrint}>This is my mouse over paragraph.</p>
       <button onDoubleClick={handleDblClick}>Double Click</button>
     </>
   );
