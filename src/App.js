@@ -1,12 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
 import ProductTab from "./component/ProductsTab";
-import MsgBox from "./component/MsgBox";
 
 function App() {
   return (
     <div>
-      <MsgBox userName="Mayank Sharma" textColor="red" />
+    <h1 style={{textAlign:"center"}}>Blockbuster Deals | Shop Now</h1>
       <ProductTab />
     </div>
   );

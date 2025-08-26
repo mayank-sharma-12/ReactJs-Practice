@@ -2,13 +2,13 @@ import React from "react";
 import Product from "./Product";
 
 function ProductTab() {
-    
   return (
-    <>
-      <Product productTitle='Laptop' productPrice={30000} />
-      <Product productTitle='Mobile' productPrice={15000} />
-      <Product productTitle='Tablet' productPrice={45000} />
-    </>
+    <div style={{display:"flex", justifyContent:"space-around", margin:"auto",}}>
+      <Product productTitle="Samsung Galaxy" idx={0} />
+      <Product productTitle="Apple iphon 14" idx={1} />
+      <Product productTitle="Redmi Note 7" idx={2} />
+      <Product productTitle="Moto Fusion 64" idx={3} />
+    </div>
   );
 }
 
