@@ -1,18 +1,23 @@
 import React from "react";
 
-function printConsole() {
+function handleConsole() {
   console.log("Hello There!");
 }
 
-function printBye(){
+function handlePrint(){
     console.log("Bye Bye!");
+}
+
+function handleDblClick(){
+    console.log("Double Click")
 }
 
 function Button() {
   return (
     <>
-      <button onClick={printConsole}>Click me!</button>
-      <p onClick={printBye}>This is my clickable paragraph.</p>
+      <button onClick={handleConsole}>Click me!</button>
+      <p onMouseOverCapture={handlePrint}>This is my mouse over paragraph.</p>
+      <button onDoubleClick={handleDblClick}>Double Click</button>
     </>
   );
 }
