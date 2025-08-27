@@ -1,10 +1,10 @@
 import React from "react";
 
-function handleConsole() {
+function handleClick() {
   console.log("Hello There!");
 }
 
-function handlePrint(){
+function handleMouseOver(){
     console.log("Bye Bye!");
 }
 
@@ -15,8 +15,8 @@ function handleDblClick(){
 function Button() {
   return (
     <>
-      <button onClick={handleConsole}>Click me!</button>
-      <p onMouseOver={handlePrint}>This is my mouse over paragraph.</p>
+      <button onClick={handleClick}>Click me!</button>
+      <p onMouseOver={handleMouseOver}>This is my mouse over paragraph.</p>
       <button onDoubleClick={handleDblClick}>Double Click</button>
     </>
   );
