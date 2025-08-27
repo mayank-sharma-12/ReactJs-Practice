@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Counter from "./component/Counter";
+import LikeButton from "./component/LikeButton";
 
 function App() {
   return (
     <div>
-      <Counter />
+      <LikeButton />
     </div>
   );
 }
